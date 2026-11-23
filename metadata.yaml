@@ -1,0 +1,13 @@
+architecture: "x86_64"
+creation_date: 1778844331
+properties:
+    architecture: "x86_64"
+    description: "Ubuntu 22.04 LTS server (20260515)"
+    os: "ubuntu"
+    release: "jammy"
+templates:
+    /etc/hostname:
+        when:
+            - create
+            - copy
+        template: hostname.tpl
