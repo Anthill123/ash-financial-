@@ -1,0 +1,124 @@
+name: vh-prod-main-5e2352-762b3e42
+backend: btrfs
+pool: cow
+optimized: false
+optimized_header: false
+type: container
+config:
+  profiles:
+  - name: default
+    description: Default LXD profile
+    config: {}
+    devices:
+      eth0:
+        name: eth0
+        network: lxdbr0
+        type: nic
+      root:
+        path: /
+        pool: default
+        type: disk
+    used_by: []
+    project: default
+  container:
+    name: vh-prod-main-5e2352-762b3e42
+    description: ""
+    status: Running
+    status_code: 103
+    created_at: 2026-11-01T10:02:46.435082167Z
+    last_used_at: 2026-11-01T12:43:14.624524099Z
+    location: none
+    type: container
+    project: default
+    architecture: x86_64
+    ephemeral: false
+    stateful: false
+    profiles:
+    - default
+    config:
+      image.architecture: x86_64
+      image.description: Ubuntu 22.04 LTS server (20260515)
+      image.os: ubuntu
+      image.release: jammy
+      limits.cpu: "1"
+      limits.cpu.allowance: 100ms/100ms
+      limits.memory: 2048MiB
+      security.nesting: "true"
+      security.syscalls.intercept.mknod: "true"
+      security.syscalls.intercept.setxattr: "true"
+      user.vh-cpu-window: "1795121806"
+      user.vh-memory-window: "1795121806"
+      volatile.base_image: 99781360c72f6ce4e2e61ccb1b688fd4bd1e53147da7984b4a2b5919c82f8dbd
+      volatile.cloud-init.instance-id: 9a387e2d-6571-43d2-9003-79749b985324
+      volatile.eth0.host_name: veth366392a1
+      volatile.eth0.hwaddr: 00:16:3e:1f:75:c8
+      volatile.idmap.base: "0"
+      volatile.idmap.current: '[{"Isuid":true,"Isgid":false,"Hostid":1000000,"Nsid":0,"Maprange":1000000000},{"Isuid":false,"Isgid":true,"Hostid":1000000,"Nsid":0,"Maprange":1000000000}]'
+      volatile.idmap.next: '[{"Isuid":true,"Isgid":false,"Hostid":1000000,"Nsid":0,"Maprange":1000000000},{"Isuid":false,"Isgid":true,"Hostid":1000000,"Nsid":0,"Maprange":1000000000}]'
+      volatile.last_state.idmap: '[]'
+      volatile.last_state.power: RUNNING
+      volatile.uuid: 8d3959e7-345f-40b7-b19e-e38a02214bd0
+      volatile.uuid.generation: 8d3959e7-345f-40b7-b19e-e38a02214bd0
+    devices:
+      root:
+        path: /
+        pool: cow
+        size: 15GiB
+        type: disk
+    expanded_config:
+      image.architecture: x86_64
+      image.description: Ubuntu 22.04 LTS server (20260515)
+      image.os: ubuntu
+      image.release: jammy
+      limits.cpu: "1"
+      limits.cpu.allowance: 100ms/100ms
+      limits.memory: 2048MiB
+      security.nesting: "true"
+      security.syscalls.intercept.mknod: "true"
+      security.syscalls.intercept.setxattr: "true"
+      user.vh-cpu-window: "1795121806"
+      user.vh-memory-window: "1795121806"
+      volatile.base_image: 99781360c72f6ce4e2e61ccb1b688fd4bd1e53147da7984b4a2b5919c82f8dbd
+      volatile.cloud-init.instance-id: 9a387e2d-6571-43d2-9003-79749b985324
+      volatile.eth0.host_name: veth366392a1
+      volatile.eth0.hwaddr: 00:16:3e:1f:75:c8
+      volatile.idmap.base: "0"
+      volatile.idmap.current: '[{"Isuid":true,"Isgid":false,"Hostid":1000000,"Nsid":0,"Maprange":1000000000},{"Isuid":false,"Isgid":true,"Hostid":1000000,"Nsid":0,"Maprange":1000000000}]'
+      volatile.idmap.next: '[{"Isuid":true,"Isgid":false,"Hostid":1000000,"Nsid":0,"Maprange":1000000000},{"Isuid":false,"Isgid":true,"Hostid":1000000,"Nsid":0,"Maprange":1000000000}]'
+      volatile.last_state.idmap: '[]'
+      volatile.last_state.power: RUNNING
+      volatile.uuid: 8d3959e7-345f-40b7-b19e-e38a02214bd0
+      volatile.uuid.generation: 8d3959e7-345f-40b7-b19e-e38a02214bd0
+    expanded_devices:
+      eth0:
+        name: eth0
+        network: lxdbr0
+        type: nic
+      root:
+        path: /
+        pool: cow
+        size: 15GiB
+        type: disk
+  pool:
+    name: cow
+    description: ""
+    driver: btrfs
+    status: Created
+    config:
+      size: 1151GiB
+      source: /var/snap/lxd/common/lxd/disks/cow.img
+    used_by: []
+    locations:
+    - none
+  volume:
+    name: vh-prod-main-5e2352-762b3e42
+    description: ""
+    type: container
+    pool: cow
+    content_type: filesystem
+    project: default
+    location: none
+    created_at: 2026-11-01T10:02:46.435082167Z
+    config:
+      volatile.uuid: debaabf6-6a35-4745-9501-0ffd25fce38a
+    used_by: []
